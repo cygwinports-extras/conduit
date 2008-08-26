@@ -1,0 +1,8 @@
+category: Gnome
+requires: python python-dateutil python-dbus python-evolution python-gdata python-gconf2 python-gobject2 python-gtk2 python-gnomevfs2 python-gnome2 python-goocanvas python-gpod python-simplejson python-sqlite3 python-vobject python-webkit
+sdesc: "GNOME synchronization application"
+ldesc: "Conduit is a synchronization application for GNOME. It allows 
+you to synchronize your files, photos, emails, contacts, notes, calendar 
+data and any other type of personal information and synchronize that 
+data with another computer, an online service, or even another 
+electronic device."

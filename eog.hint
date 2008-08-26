@@ -1,0 +1,9 @@
+category: Gnome Graphics
+requires: conduit eog python python-dbus python-gtk2
+external-source: conduit
+sdesc: "Eye-of-GNOME Conduit plugin"
+ldesc: "Conduit is a synchronization application for GNOME. It allows 
+you to synchronize your files, photos, emails, contacts, notes, calendar 
+data and any other type of personal information and synchronize that 
+data with another computer, an online service, or even another 
+electronic device."

@@ -1,0 +1,24 @@
+inherit gnome2 python
+
+DESCRIPTION="GNOME syncronization application"
+HOMEPAGE="http://www.conduit-project.org/"
+
+PATCH_URI="0.3.13-install.patch"
+
+PKG_NAMES="${PN} eog-${PN} nautilus-${PN} totem-${PN}"
+PKG_HINTS="bin eog nautilus totem"
+PKG_CONTENTS[0]="etc/ usr/bin/ usr/lib/${PN}/ ${PYTHON_SITELIB#/} usr/lib/pkgconfig/ usr/share/"
+PKG_CONTENTS[1]="usr/lib/eog/"
+PKG_CONTENTS[2]="usr/lib/nautilus/"
+PKG_CONTENTS[3]="usr/lib/totem/"
+
+DIFF_EXCLUDES="defs.py"
+
+CYGCONF_ARGS="
+	--enable-eog-plugin
+	--with-eog-plugin-dir=/usr/lib/eog/plugins
+	--enable-nautilus-extension
+	--with-nautilus-extension-dir=/usr/lib/nautilus/extensions-2.0/python
+	--enable-totem-plugin
+	--with-totem-plugin-dir=/usr/lib/totem/plugins
+"

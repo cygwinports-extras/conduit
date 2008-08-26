@@ -1,0 +1,20 @@
+--- origsrc/conduit-0.3.13/tools/eog-plugin/Makefile.am	2007-11-28 18:29:13.000000000 -0600
++++ src/conduit-0.3.13/tools/eog-plugin/Makefile.am	2008-08-19 23:56:09.290697700 -0500
+@@ -1,6 +1,6 @@
+ if ENABLE_EOG_PLUGIN
+ nautextdir = $(EOG_PLUGIN_DIR)
+-	nautext_DATA = conduit.py conduit.eog-plugin config.glade
++nautext_DATA = conduit.py conduit.eog-plugin config.glade
+ endif
+ 
+ EXTRA_DIST = \
+--- origsrc/conduit-0.3.13/tools/nautilus-extension/Makefile.am	2007-11-28 18:29:13.000000000 -0600
++++ src/conduit-0.3.13/tools/nautilus-extension/Makefile.am	2008-08-19 23:56:11.290684900 -0500
+@@ -1,6 +1,6 @@
+ if ENABLE_NAUTILUS_EXTENSION
+ nautextdir = $(NAUTILUS_EXTENSION_DIR)
+-	nautext_DATA = conduit.py
++nautext_DATA = conduit.py
+ endif
+ 
+ EXTRA_DIST = \
